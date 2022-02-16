@@ -12,7 +12,7 @@
         
     .titulo { 
         grid-area: 1 / 1 / 2 / 3;
-        background-color: #FDF5CA;
+        background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
         padding-top: 35px;
         padding-bottom: 35px;
         font-family: Arial, Helvetica, sans-serif;
@@ -46,12 +46,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        animation-duration: 2s;
+        animation-name: aparecer;
 
     }
     .tinyimg { 
     
         grid-area: 4 / 2 / 6 / 3; 
-        
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     
 .parentpyg {
@@ -63,7 +66,7 @@
             
     .titulopyg { 
         grid-area: 1 / 1 / 2 / 2;
-        background-color: #FDF5CA;
+        background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
         padding-top: 35px;
         padding-bottom: 35px;
         font-family: Arial, Helvetica, sans-serif;
@@ -83,6 +86,8 @@
         padding-bottom: 10px;
         color: #ff5f7e;
         font-family: Arial, Helvetica, sans-serif;
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     .navpyg { 
         grid-area: 3 / 1 / 4 / 2; 
@@ -122,7 +127,7 @@
             
     .titulo_a { 
         grid-area: 1 / 1 / 2 / 4;
-        background-color: #FDF5CA;
+        background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
         padding-top: 35px;
         padding-bottom: 35px;
         font-family: Arial, Helvetica, sans-serif;
@@ -139,6 +144,8 @@
         padding-bottom: 10px;
         color: #ff5f7e;
         font-family: Arial, Helvetica, sans-serif; 
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     .nav_a { 
         grid-area: 3 / 1 / 4 / 4;
@@ -151,7 +158,7 @@
     }
     .formulario { 
         grid-area: 4 / 1 / 5 / 2; 
-        background-color: #FDF5CA;
+        background:  radial-gradient(#FFDFAF, #FDF5CA);
         color: #ff5f7e;
         display: flex;
         align-items: center;
@@ -187,7 +194,7 @@
             
     .tituloSN { 
         grid-area: 1 / 1 / 2 / 3;
-        background-color: #FDF5CA;
+        background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
         padding-top: 30px;
         padding-bottom: 30px;
         font-family: Arial, Helvetica, sans-serif;
@@ -204,6 +211,8 @@
         padding-bottom: 10px;
         color: #ff5f7e;
         font-family: Arial, Helvetica, sans-serif; 
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     .navSN { 
         grid-area: 3 / 1 / 4 / 3;
@@ -247,27 +256,27 @@
 
 .imagentablagatos{
     width: 75%;
+    animation-duration: 2s;
+    animation-name: aparecer;
 }
 .imgadopta{
-    width: 70%;
-    height: 80%;
+    width: 100%;
 }
 .imgindexbig{
-    width: 75%;
-    height: 70%;
+    width: 100%;
 }
 .imgindextiny{
-    width: 75%;
-    height: 43%;
+    width: 100%;
 }
 
 .imgmascota{
-    width: 90%;
-    height: 80%;
+    width: 100%;
 }
 
 .imagentablaperros{
-    width: 83%;
+    width: 60%;
+    animation-duration: 2s;
+    animation-name: aparecer;
 }
 
 .texto{
@@ -306,17 +315,28 @@ label{
 }
 
 
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+   
+}
 
 
 
-/*Tabler*/
+
+/*Tablet*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
     .parentindex {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.7fr 0.5fr 1.5fr 1fr 3fr 0.5fr;
+        grid-template-rows: 0.5fr 0.3fr 1.5fr 1fr 3fr 0.3fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
@@ -329,7 +349,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA;
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -348,6 +368,8 @@ label{
             display: flex;
             align-items: center;
             justify-content: center;
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .main { 
             grid-area: 4 / 1 / 5 / 2;
@@ -363,6 +385,8 @@ label{
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .footer { 
             grid-area: 6 / 1 / 8 / 2; 
@@ -388,7 +412,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA;
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -402,6 +426,8 @@ label{
             padding-bottom: 15px;
             color: #ff5f7e;
             font-family: Arial, Helvetica, sans-serif; 
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .navpyg { 
             grid-area: 3 / 1 / 4 / 2; 
@@ -434,7 +460,7 @@ label{
     .parent_a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.7fr 0.3fr 0.5fr 3fr 1.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.3fr 0.25fr 1.3fr 1.5fr 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
@@ -447,7 +473,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA;
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -460,7 +486,9 @@ label{
             padding-top: 15px;
             padding-bottom: 15px;
             color: #ff5f7e;
-            font-family: Arial, Helvetica, sans-serif; 
+            font-family: Arial, Helvetica, sans-serif;
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .nav_a { 
             grid-area: 3 / 1 / 4 / 3; 
@@ -501,7 +529,7 @@ label{
     .parentSN {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.7fr 0.3fr 0.5fr 2fr repeat(2, 2.5fr) 0.5fr;
+        grid-template-rows: 0.7fr 0.3fr 0.5fr 2fr repeat(2, 2.5fr) 0.3fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
@@ -514,7 +542,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA; 
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -528,6 +556,8 @@ label{
             padding-bottom: 15px;
             color: #ff5f7e;
             font-family: Arial, Helvetica, sans-serif; 
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .navSN { 
             grid-area: 3 / 1 / 4 / 3; 
@@ -567,34 +597,36 @@ label{
 
     
     .imagentablaperros{
-        width: 90%;
+        width: 100%;
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     
     .imagentablagatos{
-        width: 90%;
+        width: 100%;
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     .imgadopta{
-        width: 70%;
-        height: 90%;
+        width: 100%;
     }
     .imgindexbig{
-        width: 90%;
-        height: 90%;
+        width: 100%;
     }
     .imgindextiny{
-        width: 85%;
-        height: 43%;
+        width: 100%;
     }
     
     .imgmascota{
-        width: 90%;
-        height: 80%;
+        width: 100%;
     }
     li{
         list-style: none;
         margin: 0 2vw;
         font-size: 2.1vh;
     }
+
+
 
 }
 
@@ -603,7 +635,7 @@ label{
     .parentindex {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.7fr 0.5fr 1fr 1fr 2fr 0.3fr;
+        grid-template-rows: 0.3fr 0.15fr 0.4fr 0.6fr 1fr 0.15fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
@@ -616,7 +648,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA;
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -635,6 +667,8 @@ label{
             display: flex;
             align-items: center;
             justify-content: center;
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .main { 
             grid-area: 4 / 1 / 5 / 2;
@@ -650,6 +684,8 @@ label{
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .footer { 
             grid-area: 6 / 1 / 8 / 2; 
@@ -675,7 +711,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA;
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -689,6 +725,8 @@ label{
             padding-bottom: 15px;
             color: #ff5f7e;
             font-family: Arial, Helvetica, sans-serif; 
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .navpyg { 
             grid-area: 3 / 1 / 4 / 2; 
@@ -722,20 +760,20 @@ label{
     .parent_a {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.7fr 0.3fr 0.5fr 2fr repeat(2, 1.5fr) 0.3fr;
+        grid-template-rows: 0.35fr 0.2fr 0.2fr 1fr repeat(2, 1.5fr) 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
             
         .titulo_a { 
             grid-area: 1 / 1 / 2 / 2;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA;
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -745,10 +783,13 @@ label{
             background-color: #FDF5CA;
             text-align: center;
             font-weight: bold;
-            padding-top: 15px;
-            padding-bottom: 15px;
             color: #ff5f7e;
             font-family: Arial, Helvetica, sans-serif; 
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .nav_a { 
             grid-area: 3 / 1 / 4 / 2;
@@ -789,7 +830,7 @@ label{
     .parentSN {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.7fr 0.3fr 0.5fr 2fr repeat(2, 1.5fr) 0.3fr;
+        grid-template-rows: 0.5fr 0.3fr 0.2fr 1.2fr repeat(2, 0.8fr) 0.2fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
@@ -802,7 +843,7 @@ label{
             font-weight: bold;
             text-align: center;
             color: #ff5f7e;
-            background-color: #FDF5CA; 
+            background: linear-gradient(to bottom, #FFDFAF,#FDF5CA);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -816,6 +857,8 @@ label{
             padding-bottom: 15px;
             color: #ff5f7e;
             font-family: Arial, Helvetica, sans-serif; 
+            animation-duration: 2s;
+            animation-name: aparecer;
         }
         .navSN { 
             grid-area: 3 / 1 / 4 / 2; 
@@ -854,29 +897,29 @@ label{
 
     
     .imagentablaperros{
-        width: 90%;
+        width: 100%;
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     
     .imagentablagatos{
-        width: 90%;
+        width: 100%;
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
     .imgadopta{
-        width: 70%;
-        height: 90%;
+        width: 100%;
     }
     .imgindexbig{
-        width: 90%;
-        height: 75%;
+        width: 100%;
     }
     .imgindextiny{
-        width: 85%;
-        height: 35%;
+        width: 100%;
         padding: 15px;
     }
     
     .imgmascota{
-        width: 90%;
-        height: 70%;
+        width: 100%;
     }
     li{
         list-style: none;
