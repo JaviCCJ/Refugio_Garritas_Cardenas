@@ -3,53 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css" />
     <title>RG - Adopta!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="https://drive.google.com/uc?export=view&id=1pJZ2stwVJP0-gzvUoENS3pzSSy7py9GL" type="image/x-icon">
 </head>
-<body class="parent_a">
+<body>
 
-    <h1 class="titulo_a">REFUGIO GARRITAS</h1>
-    <h2 class="subtitulo_a">ADOPTA!</h2>
-    <nav class="nav_a">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="perros.html">Perros</a></li>
-            <li><a href="gatos.html">Gatos</a></li>
-            <li><a href="adopta.html">Adopta!</a></li>
-            <li><a href="sobre_nosotros.html">Sobre Nosotros</a>
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom ">
+        <a class="navbar-brand" href="#">REFUGIO GARRITAS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="perros.html">Perros <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gatos.html">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adopta.html">Adopta!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <div class="container contact-form">
+        <form method="post">
+            <h3>Adopta a un amigo!</h3>
+            <p>Rellena el formulario para que podamos darte la mascota mas adecuada para ti</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Nombre *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Apellido *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Telefono *" value="" />
+                    </div>
 
-    <main class="formulario">
-        <form>
-            <label for="nombre"><b>Nombre:</b></label>
-            <input type="text" name="nombre" placeholder="Nombre"/>
-            <label for="apellido"><b>Apellido:</b></label>
-            <input type="text" name="apellido" placeholder="Apellido"/>
-            <label for="email"><b>Email:</b></label>
-            <input type="email" name="email" placeholder="nombre@mail.com">
-            <label for="numero"><b>Teléfono:</b></label>
-            <input type="text" name="numero" placeholder="+56912345678">
-            <label for="mascota"><b>Tipo:</b></label>
-            <select name="mascota" id="mascota">
-                <option value="perro">Perro</option>
-                <option value="gato">Gato</option>
-            </select>
-            <label for="mnombre"><b>Nombre de la mascota:</b></label>
-            <input type="text" name="mnombre" placeholder="Felix">
-            <input type="button" value="Enviar!">
-        </form>  
-    </main>
-    <div class="img1"><img class="imgadopta" src="https://drive.google.com/uc?export=view&id=17YjWo8C5303DnM2FYR95u9JKvV3WMjga" alt="perro"></div>
-    <div class="img2"><img class="imgadopta" src="https://drive.google.com/uc?export=view&id=10_x7a64etJ5hiBBRtSrwA4G0Il-oWJ6J" alt="gato"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Mascota deseada *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
-
-    <footer class="footer_a"> 
-        <img class="imgredes" src="https://www.shareicon.net/data/256x256/2016/11/16/854126_color_512x512.png" alt="Instagram">
-        <img class="imgredes" src="https://www3.gobiernodecanarias.org/medusa/edublog/iesguillerminabrito/wp-content/uploads/sites/268/2019/02/facebook-logo-f-sqaure1.png" alt="Facebook">
-        <img class="imgredes" src="https://pnggrid.com/wp-content/uploads/2021/07/Twitter-Logo-Square.png" alt="Twitter">
+    <footer class="footer fixed-bottom">
+        <div class="container text-center">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-skype"></i></a>
+        </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
