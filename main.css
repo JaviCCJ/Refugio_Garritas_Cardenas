@@ -238,11 +238,16 @@ body { margin: 0; font: 16px/1.3 sans-serif; }
   text-align: center;
 }
 .CSSgal .slider h2 {
-  margin-top: 40vh;
+  margin-top: 35vh;
   font-weight: 200;
   letter-spacing: -0.06em;
   word-spacing: 0.2em;
   font-size: 3em;
+  background-color:rgba(0, 0, 0, 0.3);
+}
+.CSSgal .slider p{
+    background-color:rgba(0, 0, 0, 0.3);
+    font-size: 20px;
 }
 .CSSgal a {
   border-radius: 50%;
@@ -252,96 +257,40 @@ body { margin: 0; font: 16px/1.3 sans-serif; }
 }
 
 
-.slider .P1{
+.slider .Perros1{
     background-image:url("https://www.viveusa.mx/sites/default/files/field/image/perro_salchicha.jpg");
 }
-.slider .P1 p{
-    font-size: 20px;
-    background-color:rgba(0, 0, 0, 0.3);
-}
-.slider .P1 h2{
-    background-color:rgba(0, 0, 0, 0.3);
-}
-
-.slider .P2{
+.slider .Perros2{
     background-image:url("https://www.happets.com/blog/wp-content/uploads/2019/10/happy-pets-que-necesita-tu-perro-para-ser-feliz-1024x683.jpg");
 }
-.slider .P2 p{
-    font-size: 20px;
-    background-color:rgba(0, 0, 0, 0.3);
-}
-.slider .P2 h2{
-    background-color:rgba(0, 0, 0, 0.3);
-}
 
-.slider .P3{
+.slider .Perros3{
     background-image:url("https://verdecora.es/blog/wp-content/uploads/2019/09/como-saber-perro-es-feliz.jpg");
 }
-.slider .P3 p{
-    font-size: 20px;
-    background-color:rgba(0, 0, 0, 0.3);
-}
-.slider .P3 h2{
-    background-color:rgba(0, 0, 0, 0.3);
-}
-.slider .P4{
+.slider .Perros4{
     background-image:url("https://okdiario.com/img/2019/07/02/conoce-estas-cuatro-subrazas-de-caniche-1.jpg");  
-}
-.slider .P4 p{
-    font-size: 20px;
-    background-color:rgba(0, 0, 0, 0.3);
-}
-.slider .P4 h2{
-    background-color:rgba(0, 0, 0, 0.3);
+
 }
 
 
 .slider .G1{
-    background-image:url("https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg");
-    
+    background-image:url("https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg");   
 }
-.slider .G1 p{
-    font-size: 20px;
-}
+
 
 .slider .G2{
     background-image:url('https://s1.eestatic.com/2021/06/30/curiosidades/mascotas/592951586_193746687_1706x960.jpg');
     background-position:center top;
-}
-.slider .G2 p{
-    background-color:rgba(0, 0, 0, 0.3);
-    font-size: 20px;
-}
-.slider .G2 h2{
-    background-color:rgba(0, 0, 0, 0.3);
-
 }
 
 .slider .G3{
     background-image:url("https://estaticos-cdn.elperiodico.com/clip/690a7c8f-559f-455f-b543-41a153fe8106_alta-libre-aspect-ratio_default_0.jpg");
 
 }
-.slider .G3 p{
-    background-color:rgba(0, 0, 0, 0.3);
-    font-size: 20px;
-}
-.slider .G3 h2{
-    background-color:rgba(0, 0, 0, 0.3);
-}
-
 
 .slider .G4{
     background-image:url("https://t1.uc.ltmcdn.com/images/6/2/6/como_saber_si_mi_gato_es_feliz_51626_orig.jpg");
 }
-.slider .G4 p{
-    background-color:rgba(0, 0, 0, 0.3);
-    font-size: 20px;
-}
-
-.slider .G4 h2{
-    background-color:rgba(0, 0, 0, 0.3);
-}
-
 
 .bg-image{
     background-image:url("https://www.simplemost.com/wp-content/uploads/2017/10/AdobeStock_84666307-e1600353477630.jpeg");
