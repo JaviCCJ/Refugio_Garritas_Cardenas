@@ -1,7 +1,57 @@
+/*SASS 2*/
+/*Agregado arriba para hacer pruebas facilmente*/
+
+$pyg-bg-image: (
+    /*Perros*/
+    Perros1: url("https://www.viveusa.mx/sites/default/files/field/image/perro_salchicha.jpg"), 
+    Perros2: url("https://www.happets.com/blog/wp-content/uploads/2019/10/happy-pets-que-necesita-tu-perro-para-ser-feliz-1024x683.jpg"), 
+    Perros3: url("https://verdecora.es/blog/wp-content/uploads/2019/09/como-saber-perro-es-feliz.jpg"), 
+    Perros4: url("https://okdiario.com/img/2019/07/02/conoce-estas-cuatro-subrazas-de-caniche-1.jpg"), 
+    /*Gatos*/
+    G1: url("https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg"), 
+    G2: url('https://s1.eestatic.com/2021/06/30/curiosidades/mascotas/592951586_193746687_1706x960.jpg'), 
+    G3: url("https://estaticos-cdn.elperiodico.com/clip/690a7c8f-559f-455f-b543-41a153fe8106_alta-libre-aspect-ratio_default_0.jpg"), 
+    G4: url("https://t1.uc.ltmcdn.com/images/6/2/6/como_saber_si_mi_gato_es_feliz_51626_orig.jpg")
+
+);
+
+$index-bg-image: (
+    bg-image: url("https://www.simplemost.com/wp-content/uploads/2017/10/AdobeStock_84666307-e1600353477630.jpeg"),
+    bg-image2: url("https://i0.wp.com/thehappening.com/wp-content/uploads/2020/06/espacio-perro.jpg?fit=1024%2C694&ssl=1"), 
+    bg-image3: url("https://www.infobae.com/new-resizer/4M1fjfNa7mpS8hd855DHMpm1e_s=/1200x900/filters:format(webp):quality(85)//s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/03/05145635/veterinario.jpg"),
+    bg-image4: url("https://estaticos.muyinteresante.es/uploads/images/video/5b1fe4065cafe831213c986a/caricia-gato-portada.jpg")
+);
+
+@mixin altura($heigth){
+    height: $heigth;
+}
+
+@mixin index-stuff($background-position, $background-repeat, $background-size) {
+    background-position: $background-position;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*NAVBAR*/
+
+
+
 .navbar-custom{
     background-color: pink;
+
+    .nav-link{
+        color:white;
+    }
     .navbar-brand{
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -13,9 +63,7 @@
         border-width: 2.5px;
         background-color: pink;
     }
-    .nav-link{
-        color:white;
-    }
+
     .navbar-toggler-icon{
         background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png);
     }
@@ -125,7 +173,7 @@
     }
 }
 
-
+/*pyg*/
 .CSSgal{
     position: relative;
     overflow: hidden;
@@ -163,37 +211,11 @@
             font-size: 20px;
         }
 
-        .Perros1{
-            background-image:url("https://www.viveusa.mx/sites/default/files/field/image/perro_salchicha.jpg");
-            height: 100vh;
-        }
-        .Perros2{
-            background-image:url("https://www.happets.com/blog/wp-content/uploads/2019/10/happy-pets-que-necesita-tu-perro-para-ser-feliz-1024x683.jpg");
-            height: 100vh;
-        }
-        .Perros3{
-            background-image:url("https://verdecora.es/blog/wp-content/uploads/2019/09/como-saber-perro-es-feliz.jpg");
-            height: 100vh;
-        }
-        .Perros4{
-            background-image:url("https://okdiario.com/img/2019/07/02/conoce-estas-cuatro-subrazas-de-caniche-1.jpg");  
-            height: 100vh;
-        }
-        .G1{
-            background-image:url("https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg");   
-            height: 100vh;
-        }
-        .G2{
-            background-image:url('https://s1.eestatic.com/2021/06/30/curiosidades/mascotas/592951586_193746687_1706x960.jpg');
-            height: 100vh;
-        }
-        .G3{
-            background-image:url("https://estaticos-cdn.elperiodico.com/clip/690a7c8f-559f-455f-b543-41a153fe8106_alta-libre-aspect-ratio_default_0.jpg");
-            height: 100vh;
-        }
-        .G4{
-            background-image:url("https://t1.uc.ltmcdn.com/images/6/2/6/como_saber_si_mi_gato_es_feliz_51626_orig.jpg");
-            height: 100vh;
+        @each $mascota, $fondo in $pyg-bg-image {
+            .#{$mascota} {
+                background-image: $fondo;
+                @include altura(100vh);
+            }
         }
 
     }
@@ -284,42 +306,18 @@
 }
 
 /*INDEX*/
+@each $imagen, $url in $index-bg-image {
+    .#{$imagen} {
+        background-image: $url;
+        
+        @include index-stuff(center, no-repeat, cover);
 
-.bg-image{
-    background-image:url("https://www.simplemost.com/wp-content/uploads/2017/10/AdobeStock_84666307-e1600353477630.jpeg");
-    height: 90%; 
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image2{
-    background-image: url("https://i0.wp.com/thehappening.com/wp-content/uploads/2020/06/espacio-perro.jpg?fit=1024%2C694&ssl=1");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image3{
-    background-image: url("https://www.infobae.com/new-resizer/4M1fjfNa7mpS8hd855DHMpm1e_s=/1200x900/filters:format(webp):quality(85)//s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/03/05145635/veterinario.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image4{
-    background-image: url("https://estaticos.muyinteresante.es/uploads/images/video/5b1fe4065cafe831213c986a/caricia-gato-portada.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-image5{
-    background-image: url("https://i.blogs.es/9fca7a/gato/1366_2000.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        @if $imagen == bg-image{
+            @include altura(90%);
+        } 
+    }
+    
 }
 
 .position-relative{

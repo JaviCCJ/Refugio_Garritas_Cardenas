@@ -1,6 +1,10 @@
+/*SASS 2*/
+/*Agregado arriba para hacer pruebas facilmente*/
 /*NAVBAR*/
 .navbar-custom {
   background-color: pink; }
+  .navbar-custom .nav-link {
+    color: white; }
   .navbar-custom .navbar-brand {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,8 +13,6 @@
     border-color: white;
     border-width: 2.5px;
     background-color: pink; }
-  .navbar-custom .nav-link {
-    color: white; }
   .navbar-custom .navbar-toggler-icon {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png); }
   .navbar-custom a:hover {
@@ -91,6 +93,7 @@
     margin: 0;
     font: 16px/1.3 sans-serif; }
 
+/*pyg*/
 .CSSgal {
   position: relative;
   overflow: hidden;
@@ -228,10 +231,10 @@
 /*INDEX*/
 .bg-image {
   background-image: url("https://www.simplemost.com/wp-content/uploads/2017/10/AdobeStock_84666307-e1600353477630.jpeg");
-  height: 90%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 90%; }
 
 .bg-image2 {
   background-image: url("https://i0.wp.com/thehappening.com/wp-content/uploads/2020/06/espacio-perro.jpg?fit=1024%2C694&ssl=1");
@@ -247,12 +250,6 @@
 
 .bg-image4 {
   background-image: url("https://estaticos.muyinteresante.es/uploads/images/video/5b1fe4065cafe831213c986a/caricia-gato-portada.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.bg-image5 {
-  background-image: url("https://i.blogs.es/9fca7a/gato/1366_2000.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
