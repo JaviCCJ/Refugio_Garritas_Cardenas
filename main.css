@@ -49,6 +49,10 @@
   padding-top: 30px;
   padding-bottom: 30px; }
 
+.row .card {
+  margin-top: 10%;
+  color: darkmagenta; }
+
 /*ADOPTA!*/
 .contact-form {
   margin-top: 5%;
