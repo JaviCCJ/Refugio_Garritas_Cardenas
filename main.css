@@ -146,7 +146,7 @@
       background-image: url("https://estaticos-cdn.elperiodico.com/clip/690a7c8f-559f-455f-b543-41a153fe8106_alta-libre-aspect-ratio_default_0.jpg");
       height: 100vh; }
     .CSSgal .slider .G4 {
-      background-image: url("https://t1.uc.ltmcdn.com/images/6/2/6/como_saber_si_mi_gato_es_feliz_51626_orig.jpg");
+      background-image: url("https://img5.goodfon.com/wallpaper/nbig/f/35/4k-ultra-hd-background-cat-animal-pet-muzzle-leaves-blur-hid.jpg");
       height: 100vh; }
   .CSSgal .prevNext {
     position: absolute;
@@ -250,6 +250,12 @@
 
 .bg-image4 {
   background-image: url("https://estaticos.muyinteresante.es/uploads/images/video/5b1fe4065cafe831213c986a/caricia-gato-portada.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-image5 {
+  background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S3G2RFFJYFAFJDAMMHJZNE2RVE.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
